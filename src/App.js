@@ -6,14 +6,15 @@ import ProductDetails from './containers/ProductDetails';
 import ProductList from './containers/ProductList';
 
 function App() {
+  console.log("Host URL"+process.env.PUBLIC_URL);
   return (
     <div className="App">
       
       <Router basename='process.env.PUBLIC_URL'>
       <Header/>
         <Switch>
-          <Route path='/react-image-navigate' exact component={ProductList} />
-          <Route path='/react-image-navigate/product/:productid' exact component={ProductDetails} />
+          <Route path='/' exact component={ProductList} />
+          <Route path='/product/:productid' exact component={ProductDetails} />
           <Route> 404 Not Found</Route>
         </Switch>
       </Router>
