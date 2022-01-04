@@ -1,4 +1,4 @@
-import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
+import {HashRouter as Router,Switch,Route} from 'react-router-dom'
 import './App.css';
 import Header from './containers/Headers';
 import ProductComponent from './containers/ProductComponent';
