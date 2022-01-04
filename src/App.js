@@ -1,4 +1,4 @@
-import {HashRouter as Router,Switch,Route} from 'react-router-dom'
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 import './App.css';
 import Header from './containers/Headers';
 import ProductComponent from './containers/ProductComponent';
@@ -12,8 +12,8 @@ function App() {
       <Router >
       <Header/>
         <Switch>
-          <Route path='/' exact component={ProductList} />
-          <Route path='/product/:productid' exact component={ProductDetails} />
+          <Route path='/react-image-navigate' exact component={ProductList} />
+          <Route path='/react-image-navigate/product/:productid' exact component={ProductDetails} />
           <Route> 404 Not Found</Route>
         </Switch>
       </Router>
