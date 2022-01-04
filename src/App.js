@@ -1,4 +1,4 @@
-import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
+import {HashRouter as Router,Switch,Route} from 'react-router-dom'
 import './App.css';
 import Header from './containers/Headers';
 import ProductComponent from './containers/ProductComponent';
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       
-      <Router >
+      <Router basename='process.env.PUBLIC_URL'>
       <Header/>
         <Switch>
           <Route path='/react-image-navigate' exact component={ProductList} />
