@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       
-      <Router basename='/shaikhalam87.github.io/react-image-navigate/'>
+      <Router basename='shaikhalam87.github.io/react-image-navigate/'>
       <Header/>
         <Switch>
           <Route path='/' exact component={ProductList} />
