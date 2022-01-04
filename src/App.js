@@ -12,8 +12,8 @@ function App() {
       <Router >
       <Header/>
         <Switch>
-          <Route path='/react-image-navigate' exact component={ProductList} />
-          <Route path='/react-image-navigate/product/:productid' exact component={ProductDetails} />
+          <Route path='/' exact component={ProductList} />
+          <Route path='/product/:productid' exact component={ProductDetails} />
           <Route> 404 Not Found</Route>
         </Switch>
       </Router>
