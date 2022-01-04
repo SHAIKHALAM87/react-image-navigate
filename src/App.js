@@ -9,11 +9,11 @@ function App() {
   return (
     <div className="App">
       
-      <Router basename='shaikhalam87.github.io/react-image-navigate/'>
+      <Router >
       <Header/>
         <Switch>
-          <Route path='/' exact component={ProductList} />
-          <Route path='/product/:productid' exact component={ProductDetails} />
+          <Route path='/react-image-navigate' exact component={ProductList} />
+          <Route path='/react-image-navigate/product/:productid' exact component={ProductDetails} />
           <Route> 404 Not Found</Route>
         </Switch>
       </Router>
